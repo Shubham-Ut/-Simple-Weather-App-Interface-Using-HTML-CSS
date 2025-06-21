@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            background: url(./AI_Generated_Image_2025-06-21.png);
+            background-repeat:no-repeat ; 
+            background-size: 102%;   
+            color: aliceblue;    
+          
+        }
+        header{
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+        }
+        select {
+            border: none;
+            border-radius: 25px;
+            background-color: #28282b;
+            color: aliceblue;
+            padding: 10px;
+            width: 200px;
+            height: 50px;
+            
+        }
+        .middle{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 700px;
+            margin-top: 100px;
+        }
+        p{
+            font-size: x-large;
+        }
+        h1 {
+            font-size: xxx-large;
+            display: flex;
+            justify-content: center;
+        }
+        p2{
+            font-size: xx-large;
+
+        }
+        .div4 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #28282b9d;
+            padding: 40px;
+            border-radius: 25px;
+            border:1px solid #ffff;
+            cursor: pointer;
+        }
+        .div2 {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .div3 {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .div6{
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        .div8{
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        .div10{
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        .div12{
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        .div14{
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        .div16{
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 25px;
+        }
+        p10 {
+            display: flex;
+            justify-content: center;
+        }
+        .div6:hover{
+            background-color: #ffffff;  
+            color: #28282b;
+        }
+        .div8:hover{
+            background-color: #ffffff;  
+            color: #28282b;
+        }
+        .div10:hover{
+            background-color: #ffffff;  
+            color: #28282b;
+        }
+        .div12:hover{
+            background-color: #ffffff;  
+            color: #28282b;
+        }
+        .div14:hover{
+            background-color: #ffffff;  
+            color: #28282b;
+        }
+        .div16:hover{
+            background-color: #ffffff;  
+            color: #28282b;
+        }
+        * {
+        transition: all 0.4s ease-in-out;
+        }
+        button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transform: scale(1);
+        }
+
+        button:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        transform: translateY(0px);
+        }
+        .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        input, textarea {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 6px;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+        border-color: #4CAF50;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+        }
+        .div1 {
+        background: #43434385;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+        }
+
+        .div1:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        background: #ffffff4b;
+        color: #28282b;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <p>⚲</p>
+        <select name="country">
+            <option value="usa">Brooklyn, New York, USA</option>
+            <option value="canada">Toronto, Ontario, Canada</option>
+            <option value="uk">London, England, UK</option>
+            <option value="india">Mumbai, Maharashtra, India</option>
+            <option value="germany">Berlin, Germany</option>
+            <option value="australia">Sydney, Australia</option>
+            <option value="japan">Tokyo, Japan</option>
+            <option value="brazil">São Paulo, Brazil</option>
+            <option value="uae">Dubai, UAE</option>
+            <option value="southafrica">Cape Town, South Africa</option>
+            <option value="france">Paris, France</option>
+            <option value="china">Shanghai, China</option>
+            <option value="mexico">Mexico City, Mexico</option>
+            <option value="russia">Moscow, Russia</option>
+            <option value="italy">Rome, Italy</option>
+            <option value="netherlands">Amsterdam, Netherlands</option>
+            <option value="singapore">Singapore</option>
+            <option value="spain">Barcelona, Spain</option>
+            <option value="southkorea">Seoul, South Korea</option>
+            <option value="newzealand">Auckland, New Zealand</option>
+        </select>
+        <p1>(Monday,September 13)</p1>
+    </header>
+    <div class="middle">
+        <div class="div1">
+            <h1>21°c</h1>
+            <p2>Sunny Day</p2>
+            <div class="div2">
+            <p3>wind</p3>
+            <p4>Humidity</p4>
+            </div>
+            <div class="div3">
+            <p5>2.1km/h</p5>
+            <p6>75%</p6>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="div5">
+                <div class="div6">
+                    <p7>&#x263C;</p7>
+                    <p8>Monday</p8>
+                    <p9>21°c</p9>
+                </div>
+                <p10>Sunny Day</p10>
+            </div>
+            <div class="div7">
+                <div class="div8">
+                    <p7>&#x2600;</p7>
+                    <p8>Tuesday</p8>
+                    <p9>22°c</p9>
+                </div>
+                <p10>Black Sun Clear</p10>
+            </div>
+            <div class="div9">
+                <div class="div10">
+                    <p7>&#x2601;</p7>
+                    <p8>Wednesday</p8>
+                    <p9>19°c</p9>
+                </div>
+                <p10>Cloudy</p10>
+            </div>
+            <div class="div11">
+                <div class="div12">
+                    <p7>&#x26C5;</p7>
+                    <p8>Thursday</p8>
+                    <p9>20°c</p9>
+                </div>
+                <p10>Cloudy</p10>
+            </div>
+            <div class="div13">
+                <div class="div14">
+                    <p7>&#x26C8;</p7>
+                    <p8>Friday</p8>
+                    <p9>20°c</p9>
+                </div>
+                <p10>Thunderstrom</p10>
+            </div>
+            <div class="div15">
+                <div class="div16">
+                    <p7>&#x26C8;</p7>
+                    <p8>Saturday</p8>
+                    <p9>19°c</p9>
+                </div>
+                <p10>Thunderstrom</p10>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
